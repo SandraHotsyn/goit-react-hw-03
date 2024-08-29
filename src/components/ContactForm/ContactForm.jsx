@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import css from "./ContactForm.module.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
@@ -23,7 +24,7 @@ export default function ContactForm({ onSubmit }) {
         resetForm();
       }}
     >
-      <Form>
+      <Form className={css.form}>
         <div>
           <label htmlFor="name">Name</label>
           <Field type="text" name="name" />
