@@ -1,9 +1,12 @@
 import PropTypes from "prop-types";
+import css from "./SearchBox.module.css";
 
 export default function SearchBox({ filter, onFilterChange }) {
   return (
-    <div>
+    <div className={css.container}>
+      <p>Find contact by name</p>
       <input
+        className={css.input}
         type="text"
         placeholder="Search contacts..."
         value={filter}

@@ -1,4 +1,28 @@
 .form {
   border: 2px solid #021363;
   border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.name {
+  margin-right: 16px;
+}
+
+.button {
+  width: 140px;
+  height: 55px;
+  margin: 0 auto;
+}
+
+.input {
+  margin-left: 10px;
+  height: 30px;
+  width: 300px;
 }

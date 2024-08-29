@@ -26,20 +26,24 @@ export default function ContactForm({ onSubmit }) {
     >
       <Form className={css.form}>
         <div>
-          <label htmlFor="name">Name</label>
-          <Field type="text" name="name" />
+          <label className={css.name} htmlFor="name">
+            Name
+          </label>
+          <Field className={css.input} type="text" name="name" />
           <ErrorMessage name="name" component="div" style={{ color: "red" }} />
         </div>
         <div>
           <label htmlFor="number">Number</label>
-          <Field type="text" name="number" />
+          <Field className={css.input} type="text" name="number" />
           <ErrorMessage
             name="number"
             component="div"
             style={{ color: "red" }}
           />
         </div>
-        <button type="submit">Add Contact</button>
+        <button className={css.button} type="submit">
+          Add Contact
+        </button>
       </Form>
     </Formik>
   );
